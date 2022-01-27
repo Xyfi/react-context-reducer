@@ -3,6 +3,10 @@
   flex-direction: row;
 }
 
+.container div {
+  padding: 1em;
+}
+
 .flex-1 {
   flex: 1;
 }
