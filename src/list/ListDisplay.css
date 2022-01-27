@@ -1,0 +1,15 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+ul > li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin-left: -1px;
+    margin-top: -1px;
+}

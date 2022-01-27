@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { ListContextProvider } from './list/ListContext';
+import ListForm from "./list/ListForm";
+import ListDisplay from './list/ListDisplay';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ListContextProvider>
+      <div className="container">
+        <div className="flex-1">
+          <ListForm />
+        </div>
+        <div className="flex-2">
+          <ListDisplay />
+        </div>
+      </div>
+    </ListContextProvider>
   );
 }
 
